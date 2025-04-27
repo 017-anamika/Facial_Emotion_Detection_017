@@ -1,14 +1,56 @@
-<<<<<<< HEAD
-# React + Vite
+# Facial Emotion Detection App 🧠💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time **facial emotion detection** app built with **React**, **TensorFlow.js**, and **Vite**. It uses **face-api.js** to detect emotions like happy, sad, and angry from your webcam feed. 😄😢😠
 
-Currently, two official plugins are available:
+## Features 🌟
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time emotion detection via webcam. 📹
+- Displays dominant emotion and an intensity bar. 📊
+- Screenshot capture of detected emotion. 📸
 
-## Expanding the ESLint configuration
+## Technologies Used 🛠️
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
+- **React**: Frontend framework for building the UI. 🖥️
+- **TensorFlow.js** & **face-api.js**: For facial emotion detection. 🤖
+- **Vite**: Fast build tool with HMR (Hot Module Replacement). ⚡
+- **JavaScript** & **CSS**: For styling and functionality. 🎨
+
+## Setup and Installation ⚙️
+
+### Prerequisites 📋
+
+- **Node.js** (v14 or higher) ⚡
+- **npm** (or **Yarn**) 🎯
+
+### Install Dependencies 📦
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/017-anamika/Facial_Emotion_Detection_017.git
+   cd Facial_Emotion_Detection_017
+   
+2. Install the required dependencies:
+   ```bash
+   npm install
+   
+3. Download the pre-trained models for Tiny Face Detector and Face Expression Model and place them in the public/models directory.
+
+### Run the App 🚀
+Start the development server:
+   ```bash
+   npm run dev
+   ```
+Navigate to http://localhost:5173 in your browser. 🌍
+
+### Project Structure 📂
+   ```bash
+   /public
+   └── /models         # TensorFlow models for face-api.js
+   /src
+   └── App.js          # Main component for emotion detection
+   └── main.jsx        # Entry point for the React app
+   .gitignore
+   eslint.config.js      # ESLint configuration
+   package.json          # Project dependencies and scripts
+   vite.config.js        # Vite build configuration
+   README.md             # Project documentation
